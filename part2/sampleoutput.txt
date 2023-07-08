@@ -1,0 +1,51 @@
+Reading data from file hepatitis-training
+Trained tree:
+ASCITES?
+   True: SPIDERS?
+      True: VARICES?
+         True: STEROID?
+            True: live. probability = 1.0
+            False: SPLEENPALPABLE?
+               True: FIRMLIVER?
+                  True: live. probability = 1.0
+                  False: BIGLIVER?
+                     True: SGOT?
+                        True: live. probability = 1.0
+                        False: FEMALE?
+                           True: live. probability = 1.0
+                           False: ANOREXIA?
+                              True: die. probability = 1.0
+                              False: live. probability = 1.0
+                     False: live. probability = 1.0
+               False: ANOREXIA?
+                  True: live. probability = 1.0
+                  False: die. probability = 1.0
+         False: die. probability = 1.0
+      False: FIRMLIVER?
+         True: ANOREXIA?
+            True: SGOT?
+               True: live. probability = 1.0
+               False: die. probability = 1.0
+            False: live. probability = 1.0
+         False: SGOT?
+            True: BIGLIVER?
+               True: live. probability = 1.0
+               False: die. probability = 1.0
+            False: live. probability = 1.0
+   False: BIGLIVER?
+      True: VARICES?
+         True: FIRMLIVER?
+            True: STEROID?
+               True: die. probability = 1.0
+               False: BILIRUBIN?
+                  True: live. probability = 1.0
+                  False: die. probability = 1.0
+            False: live. probability = 1.0
+         False: die. probability = 1.0
+      False: live. probability = 1.0
+Baseline category: live
+Reading data from file hepatitis-test
+Predicted categories: [die, live, live, live, live, live, live, live, live, live, live, live, live, live, live, live, live, live, die, live, live, die, live, live, live]
+Actual categories: [live, die, live, live, live, live, die, live, live, live, live, live, live, live, die, die, live, live, die, live, live, live, live, live, live]
+Accuracy: 76.0%
+Baseline Accuracy: 80.0%
